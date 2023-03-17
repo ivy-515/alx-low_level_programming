@@ -11,9 +11,9 @@ int main(void)
 	char i;
 
 	for (i = 'Z'; i >= 'a'; i--)
-		printf("%c");
+		putchar (i);
 
-	printf('\n');
+	putchar ('\n');
 
 	return (0);
 }
