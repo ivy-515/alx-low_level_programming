@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	char i;
+
+	for (i = 'Z'; i >= 'a'; i--)
+		printf("%c");
+
+	printf('\n');
+
+	return (0);
+}
