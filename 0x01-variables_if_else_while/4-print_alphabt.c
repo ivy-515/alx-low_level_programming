@@ -8,9 +8,10 @@
 
 int main(void)
 {
-	char i;
-	char e = 'e';
-	char q = 'q';
+	char i, e, q;
+
+	e = 'e';
+	q = 'q';
 
 	for (i = 'a'; i <= 'z'; i++);
 	{
