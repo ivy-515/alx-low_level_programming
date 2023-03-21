@@ -8,16 +8,19 @@
  * Return: last digit of number r
  */
 
-int print_last_digit(int)
+int print_last_digit(int i)
 {
-	int i;
 	int last_digit;
 
 	if (i < 0)
+	{
 		last_digit = (-i) % 10;
+	}
 
 	else
+	{
 		last_digit = i % 10;
+	}
 
 	_putchar(last_digit + '0');
 
