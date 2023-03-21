@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * @c: An input character
  * _isalpha - check main
+ * @c: An input character
  * Description : check for alphabetic character.
  * Return: 1 if c is a letter, lowercase or uppercase and 0 otherwise
  */
