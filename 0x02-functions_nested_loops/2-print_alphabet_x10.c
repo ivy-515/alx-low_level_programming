@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * Description : prints 10 times the alphabet, in lowercase, followed by a new line.
+ * Description : prints 10 times the alphabet, followed by a new line.
  * main - Entry point
- * print_alphabet_x10 - check main
+ * function print_alphabet_x10 - check main
  * Return: Always 0 (Success)
  */
 
