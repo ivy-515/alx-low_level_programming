@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * check for alphabetic character.
- * Returns 1 if c is a letter, lowercase or uppercase
- * Returns 0 otherwise
+ * _islower - Check main
+ * @c: An input character
+ * _isalpha : check main
+ * Description : check for alphabetic character.
+ * Return: 1 if c is a letter, lowercase or uppercase and 0 otherwise
  */
 
 int _isalpha(int c)
