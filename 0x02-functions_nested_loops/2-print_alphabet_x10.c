@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * Description : prints 10 times the alphabet, followed by a new line.
- * main - Entry point
- * function print_alphabet_x10 - check main
- * Return: Always 0 (Success)
+ * print_alphabet_x10 - Check holberton
+ * Description: function uses _putchar function to print
+ * alphabet in lowercase 10 times
+ * Return: Nothing.
  */
 
 void print_alphabet_x10(void)
