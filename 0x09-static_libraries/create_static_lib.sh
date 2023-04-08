@@ -1,2 +1,3 @@
 #!/bin/bash
-ar -cvq liball.a *.c
+gcc -c *.c
+ar -cvq liball.a *.o
