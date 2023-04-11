@@ -20,6 +20,9 @@ char *create_array(unsigned int size, __attribute__((__unused__)) char c)
 	if (size == 0)
 		return (NULL);
 
+	if (arr == NULL)
+		return (NULL);
+
 	mychar = 'c';
 
 	memset(arr, mychar, size);
