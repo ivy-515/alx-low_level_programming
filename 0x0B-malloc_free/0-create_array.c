@@ -10,10 +10,10 @@
  * Return: a pointer to the array, or NULL if it fails
  */
 
-char *create_array(unsigned int size, __attribute__((__unused__)) char c)
+char *create_array(unsigned int size, char c)
 {
 	char *arr;
-	char mychar;
+	unsigned int i;
 
 	arr = (char *)malloc(size * sizeof(char));
 
@@ -23,9 +23,8 @@ char *create_array(unsigned int size, __attribute__((__unused__)) char c)
 	if (arr == NULL)
 		return (NULL);
 
-	mychar = 'c';
-
-	memset(arr, mychar, size);
+	for (i = 0; i < size; i++)
+		arr[i] = c;
 
 	return (arr);
 }
