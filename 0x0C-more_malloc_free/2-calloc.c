@@ -8,23 +8,21 @@
  * @size: unsigned int type
  * Return: return pointer to array
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
-	unsigned int count;
+	unsigned int i = 0;
+	char *space;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
-	{
+
+	space = malloc(nmemb * size);
+	if (space == NULL)
 		return (NULL);
-	}
-	count = 0;
-	while (count < nmemb * size)
-	{
-		ptr[count] = 0;
-		count++;
-	}
-	return (ptr);
+
+	for (; i < nmemb * size; i++)
+		*(space + i) = 0;
+
+	return (space);
 }
