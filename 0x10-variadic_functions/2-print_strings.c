@@ -6,7 +6,7 @@
  * print_strings - a function that prints strings
  * @separator: the string to be printed
  * @n: the number of strings passed to the function
- * @...: A variable number of strings to be printed
+ *
  * Return: void
  */
 
@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(args, char *);
 
 		if (str == NULL)
-			printf("nil");
+			printf("(nil)");
 
 		else
 			printf("%s", str);
