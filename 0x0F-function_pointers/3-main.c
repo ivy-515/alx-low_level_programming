@@ -11,7 +11,8 @@
 
 int main(int argc, char **argv)
 {
-	int num1, num2;
+	int num1, num2, res;
+	int (*opp)(int, int);
 	char *operator;
 
 	if (argc != 4)
@@ -23,6 +24,8 @@ int main(int argc, char **argv)
 	operator = argv[2];
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
+
+	opp = get_op_func(operator);
 
 	if (get_op_func(operator) == NULL || operator == NULL)
 	{
@@ -36,7 +39,9 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	printf("%d\n", get_op_func(operator)(num1, num2));
+	res = opp(num1, num2);
+
+	printf("%d\n", res);
 
 	return (0);
 }
