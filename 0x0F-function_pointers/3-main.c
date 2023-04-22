@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
 
 	operator = argv[2];
@@ -27,13 +27,13 @@ int main(int argc, char **argv)
 	if (get_op_func(operator) == NULL || operator == NULL)
 	{
 		printf("Error\n");
-		return (99);
+		exit(99);
 	}
 
 	if ((*operator == '/' && num2 == 0) || (*operator == '%' && num2 == 0))
 	{
 		printf("Error\n");
-		return (100);
+		exit(100);
 	}
 
 	printf("%d\n", get_op_func(operator)(num1, num2));
