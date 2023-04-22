@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
- * main - check the code
+ * main - perfroms simple operations.
  * @argc: count
  * @argv: array
- * Return: Always 0.
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char **argv)
@@ -27,7 +26,7 @@ int main(int argc, char **argv)
 
 	opp = get_op_func(operator);
 
-	if (opp == NULL)
+	if (!opp)
 	{
 		printf("Error\n");
 		exit(99);
